@@ -1,0 +1,13 @@
+# for server
+work_method=remote
+address=0.0.0.0
+port=8074
+timeout=600
+encryption=none
+
+# for client
+work_method=local
+address=127.0.0.1
+port=8074
+timeout=600
+encryption=none

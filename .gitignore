@@ -30,3 +30,23 @@
 *.exe
 *.out
 *.app
+
+# Cmake
+CMakeFiles
+*.cmake
+Makefile
+CMakeCache.txt
+*.cbp
+*.user
+
+# project name
+qaq
+
+# config file
+*.config
+
+# personal note
+*.note
+
+# ide
+.idea
