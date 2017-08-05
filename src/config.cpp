@@ -46,7 +46,7 @@ config::config(std::string path) : port(), timeout() {
             make_error_code(system::errc::no_such_file_or_directory)) {
             BOOST_LOG_TRIVIAL(fatal) << "No file or directory";
         } else {
-            BOOST_LOG_TRIVIAL(fatal) << "Config file error";
+            BOOST_LOG_TRIVIAL(fatal) << "Config file ERROR";
         }
         exit(255);
     } catch (bad_lexical_cast &e) {

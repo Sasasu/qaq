@@ -11,7 +11,7 @@ class qaq_server : public socket_server {
     typedef boost::shared_ptr<udp_socket> udp_socket_ptr;
 
    public:
-    qaq_server(const std::string &address, unsigned short port, int timeout);
+    qaq_server(const std::string& address, unsigned short port, int timeout);
 
     virtual ~qaq_server() = default;
 
@@ -22,7 +22,9 @@ class qaq_server : public socket_server {
 
    protected:
     virtual reply_field on_tcp_connect(boost::shared_ptr<io_service> service,
-                                       tcp_socket_ptr socket);
+                                       tcp_socket_ptr socket, socket_cmd& cmd,
+                                       address& addr);
+    virtual void handle_payload();
 
    private:
 };

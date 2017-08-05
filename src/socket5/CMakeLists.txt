@@ -9,7 +9,7 @@ find_package(Boost 1.64 REQUIRED COMPONENTS thread)
 
 include_directories(${Boost_INCLUDE_DIR})
 
-add_library(socket5 socket_server.cpp)
+add_library(socket5 socket_server.cpp address.cpp)
 target_link_libraries(socket5 ${Boost_LIBRARIES})
 
 if (UNIX)
